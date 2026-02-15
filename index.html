@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <img src="Studio51PrintsLogo-cropped.jpg" alt="Studio 51 Prints Logo" width="300" height="150" />
+        <h1>Ready To Place Your Order?</h1>
+        <br>
+        <p>Fill Out The Required Fields Below To Place Your Order</p>
+        <br>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+           * {
+               margin: 0;
+               box-sizing: border-box;
+               padding: 0;
+               transition-duration: 200ms;
+            }
+
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                padding: 24px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                max-width: 450px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            input, 
+            textarea {
+                width: 100%;
+                background: transparent;
+                padding: 8px;
+                outline: none;
+            }
+
+            input:focus, 
+            textarea:focus {
+                outline: none;
+                border-color: navy;
+            }
+
+            button {
+                margin-left: auto;
+                padding: 14px 28px;
+            }
+
+            input,
+            textarea,
+            button {
+                border-radius: 5px;
+                border: 1px solid skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+        <form method="post" action="https://formsubmit.co/studio51printsbb@gmail.com" enctype="multipart/form-data">
+            
+            <!--Honeypot-->
+            <input type="text" name="_honey" style="display:none;">
+
+            <!--Disable Captcha-->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/studio_51_prints_thank_you.html">
+
+            <input name="Name" type="text" placeholder="*Enter full name" required/>
+            <input name="Email" type="email" placeholder="*Enter email" required/>
+            <input name="Telephone" type="tel" placeholder="*Enter phone number" required/>
+            <label for="Order Details">Tell us your order below: <br>(eg. Quantity = 1, Item = Iphone 15 Pro Max case, Colour = blue, Image Position = centered)</label>
+            <textarea name="Order Details" placeholder="Order Details..."></textarea>
+            <label for="File(s)">Upload image file(s) below:</label>
+            <input type="file" id="File(s)" name="File(s)" multiple/>
+            <button type="submit">Send</button>
+            <br>
+            <br>
+            <p>Please Note All Orders Placed Will Only Beginning To Be Processed On Receipt Of 50% Deposit Of Order Total.</p>
+        </form>
+        </div>
+    </body>
+</html>
