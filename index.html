@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <img src="Studio51PrintsLogo-cropped.jpg" alt="Studio 51 Prints Logo" width="300" height="150" />
+        <img src="Studio51PrintsLogo-cropped.jpg" alt="Studio 51 Prints Logo" width="300" height="120" />
         <h1>Ready To Place Your Order?</h1>
         <br>
         <p>Fill Out The Required Fields Below To Place Your Order</p>
@@ -77,14 +77,21 @@
             <input name="Name" type="text" placeholder="*Enter full name" required/>
             <input name="Email" type="email" placeholder="*Enter email" required/>
             <input name="Telephone" type="tel" placeholder="*Enter phone number" required/>
-            <label for="Order Details">Tell us your order below: <br>(eg. Quantity = 1, Item = Iphone 15 Pro Max case, Colour = blue, Image Position = centered)</label>
-            <textarea name="Order Details" placeholder="Order Details..."></textarea>
+            <label for="Order Details">Tell us your order specifics below:</label>
+            <label for="Quantity">Quantity:</label>
+            <textarea name="Quantity" placeholder="Quantity..."></textarea>
+            <label for="Item">Item (eg. Iphone 15 Pro Max case, number plate keychain etc.):</label>
+            <textarea name="Item" placeholder="Item..."></textarea>
+            <label for="Colour">Colour:</label>
+            <textarea name="Colour" placeholder="Colour..."></textarea>
+            <label for="Additional Order Details">Additional Order Details:</label>
+            <textarea name="Additional&nbsp;Order&nbsp;Details" placeholder="Additional Order Details..."></textarea>
             <label for="File(s)">Upload image file(s) below:</label>
             <input type="file" id="File(s)" name="File(s)" multiple/>
             <button type="submit">Send</button>
             <br>
             <br>
-            <p>Please Note All Orders Placed Will Only Beginning To Be Processed On Receipt Of 50% Deposit Of Order Total.</p>
+            <p>Please Note All Orders Placed Will Only Begin To Be Processed On Receipt Of 50% Deposit Of Order Total.</p>
         </form>
         </div>
     </body>
